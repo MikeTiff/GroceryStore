@@ -24,10 +24,10 @@ int main()
   cin>>item;
   list[numItems] = item;
   numItems++;
-  }
-  else if(numItems < 6)
+  
+   if(numItems = 5)
   { cout<<"You'll need a bigger list!\n";
-  }
+  }}
  }
     while(input != 'q' && input != 'Q');
     {}
