@@ -25,7 +25,7 @@ int main()
   list[numItems] = item;
   numItems++;
   }
-  else if(numItems < 5)
+  else if(numItems < 6)
   { cout<<"You'll need a bigger list!\n";
   }
  }
