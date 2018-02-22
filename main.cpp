@@ -30,13 +30,8 @@ int main()
     cout<<"You'll need a bigger list!\n";
     }
   }
-
-  else if(input == 'q' || input == 'Q')
-  {
-  Pass = 1;
-  }
-    }
-    while( Pass != 1);
+}
+    while(input != 'q' && input != 'Q');
     {}
   return 0;
 }
