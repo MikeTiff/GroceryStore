@@ -18,17 +18,19 @@ int main()
   cout<<"\nYour choice (A/Q): "<<endl;
   cin>>input;
   if(input == 'a' || input == 'A')
-  {
-  cout<<"What is the item?\n";
+   {
+      if (numItems > 4)
+        {cout<<"You'll need a bigger list!\n";
+        input = 'q';
+        }
+       else {cout<<"What is the item?\n";
   string item;
   cin>>item;
   list[numItems] = item;
   numItems++;
-  
-   if(numItems = 5)
-  { cout<<"You'll need a bigger list!\n";
+  }
   }}
- }
+
     while(input != 'q' && input != 'Q');
     {}
   return 0;
