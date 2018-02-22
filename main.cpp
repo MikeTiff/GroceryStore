@@ -20,16 +20,23 @@ int main()
   cin>>input;
   if(input == 'a' || input == 'A')
   {
+  do{
   cout<<"What is the item?\n";
-
+  cin>> list[numItems];
+  numItems++;
+    }
+  while(numItems < 5);
+    {
+    cout<<"You'll need a bigger list!\n";
+    }
   }
 
   else if(input == 'q' || input == 'Q')
-  {Pass = 1;
+  {
+  Pass = 1;
   }
     }
     while( Pass != 1);
-    {
-    }
+    {}
   return 0;
 }
