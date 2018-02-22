@@ -15,7 +15,7 @@ int main()
   cout<<"\nEnter your choice: ";
   cout<<"\n (A)dd an item";
   cout<<"\n (Q)uit";
-  cout<<"\nYour choice (A/Q): ";
+  cout<<"\nYour choice (A/Q): \n";
   cin>>input;
   if(input == 'a' || input == 'A')
   {
