@@ -2,12 +2,14 @@
 //Written By: Michael Tiffany
 #include<iostream>
 #include<string>
+#include<vector>
+
 using namespace std;
 
 int main()
-{  
-  string list[5]; //array of 5 strings
-  int numItems = 0;
+{ 
+  vector<string> list;
+  int x;     
   char input;
   do
  {
@@ -17,22 +19,28 @@ int main()
   cout<<"\n (Q)uit";
   cout<<"\nYour choice (A/Q): ";
   cin>>input;
-  if(input == 'a' || input == 'A')
+  if (input == 'a' || input == 'A')
    {
    cout<<"What is the item?\n";
    string item;
    cin>>item;
-      if (numItems <  5)
-      { list[numItems] = item;
-        numItems++;}
-
-       else
-         {cout<<"You'll need a bigger list!\n";
-           }      }
-
+   list.push_back(item);
+   }
+ }
+ while (input != 'q' && input != 'Q');
+  {
+    if (list.empty() == true)
+    {
+     cout<<"No items to buy!\n";
+    }
+    else
+    {
+    cout<<"==ITEMS TO BUY==\n";
+    for (x=0; x < list.size(); x++)
+     {
+      cout<<list[x]<<endl;
+     }
+    }
   }
-
-    while(input != 'q' && input != 'Q');
-    {}
   return 0;
 }
